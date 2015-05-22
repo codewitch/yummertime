@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   $.fn.scrollLock = function (mainContentHeight) {
     var $this = this,
         $window = $(window);
@@ -115,6 +115,5 @@ $(document).ready(function () {
     return 0;
   };
 
-  $('#sidebar').scrollLock($('.main-section').outerHeight(false));
+  $('#sidebar').scrollLock($('#main').outerHeight(false));
 });
-
